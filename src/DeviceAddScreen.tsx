@@ -75,7 +75,7 @@ function DeviceAddScreen({ navigation }): JSX.Element {
   function onMessageArrived(message) {
     const mqttMessage = message.payloadString;
 
-    if (mqttMessage === 'OKAY') {
+    if (mqttMessage === 'okay') {
       onConnect();
     }
   }
@@ -125,7 +125,6 @@ function DeviceAddScreen({ navigation }): JSX.Element {
             <View style={styles.buttonContainer}>
               <Button title='Add Device' onPress={() => publishMessage('CONNECT')} />
             </View>
-            <Text style={styles.topicText}>Last Order: {topicMessage}</Text>
           </Section>
         </View>
       </View>

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import init from 'react_native_mqtt';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -126,7 +125,6 @@ function AddTaskAreaScreen({ navigation }): JSX.Element {
             <View style={styles.buttonContainer}>
               <Button title='enter map' onPress={() => publishMessage('START')} />
             </View>
-            <Text style={styles.topicText}>Last Order: {topicMessage}</Text>
           </Section>
         </View>
       </View>
