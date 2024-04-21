@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ToastAndroid, View, SafeAreaView, StatusBar, StyleSheet, useColorScheme, PanResponder, Dimensions } from 'react-native';
 import init from 'react_native_mqtt';
 
-
 import { useFocusEffect } from '@react-navigation/native';
 import Svg, { Line, Circle, Text } from 'react-native-svg';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -12,23 +11,29 @@ function MapScreen({ navigation }) {
   const isDarkMode = useColorScheme() === 'dark';
   const [lines, setLines] = useState([]);
   const topics = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214'];
-  
 
   const joystickRadius = 50;
-  const startingPoint = { x: window.width / 2, y: window.height / 2 };
+
+  const panResponderStart = { x: 0, y: 0 };
+  const [lastLineEnd, setLastLineEnd] = useState({ x: 0, y: 0 });
+  const [startingPoint, setStartingPoint] = useState({ x: window.width / 2, y: window.height / 2 });
+
+ 
 
   const panResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: () => true,
       onMoveShouldSetPanResponder: () => true,
       onPanResponderGrant: (event, gestureState) => {
+        isPanResponderActive = true;
         handleJoystickMove(gestureState.moveX, gestureState.moveY);
       },
       onPanResponderMove: (event, gestureState) => {
         handleJoystickMove(gestureState.moveX, gestureState.moveY);
       },
       onPanResponderRelease: () => {
-        handleJoystickMove(startingPoint.x, startingPoint.y);
+        isPanResponderActive = false;
+        handleJoystickRelease();
       },
     })
   ).current;
@@ -61,13 +66,9 @@ function MapScreen({ navigation }) {
   client.onConnectionLost = onConnectionLost;
 
   useEffect(() => {
-    
     connectToMqtt();
   }, []);
-  
 
-  
-  
   function onConnect() {
     ToastAndroid.showWithGravityAndOffset(
       'Ready to move\nCihaz başladı',
@@ -101,7 +102,8 @@ function MapScreen({ navigation }) {
     });
   }
 
-  async function publishMessage(message, retryCount = 3) {
+  async function publishMessage(direction, rotation) {
+    const message = `direction=${direction}&rotation=${rotation}`;
     try {
       if (client.isConnected()) {
         const mqttMessage = new Paho.MQTT.Message(message);
@@ -112,26 +114,23 @@ function MapScreen({ navigation }) {
       }
     } catch (error) {
       console.log('Error:', error);
-
-      if (retryCount > 0) {
-        setTimeout(() => {
-          publishMessage(message, retryCount - 1);
-        }, 1000);
-      } else {
-        ToastAndroid.showWithGravityAndOffset(
-          'Hata\nTekrar Denemeleri Başarısız',
-          ToastAndroid.LONG,
-          ToastAndroid.BOTTOM,
-          25,
-          50
-        );
-      }
     }
   }
 
+  function handleJoystickRelease() {
+    // PanResponder bırakıldığında, başlangıç noktasını sadece son çizginin bitiş noktasına eşitle
+    if (lines.length > 0) {
+      const lastLine = lines[lines.length - 1];
+      panResponderStart.x = lastLine.x2;
+      panResponderStart.y = lastLine.y2;
+      setLastLineEnd({ x: lastLine.x2, y: lastLine.y2 });
+    }
+  }
+
+
   function handleJoystickMove(moveX, moveY) {
-    const deltaX = moveX - startingPoint.x;
-    const deltaY = moveY - startingPoint.y;
+    const deltaX = moveX - panResponderStart.x;
+    const deltaY = moveY - panResponderStart.y;
 
     const angle = (Math.atan2(deltaY, deltaX) * 180) / Math.PI;
     const direction =
@@ -143,19 +142,22 @@ function MapScreen({ navigation }) {
         ? 'ileri'
         : 'saga';
 
-        const lastLine = lines[lines.length - 1];
-        const newX1 = lastLine ? lastLine.x2 : startingPoint.x;
-        const newY1 = lastLine ? lastLine.y2 : startingPoint.y;
-        const newX2 = moveX;
-        const newY2 = moveY;
+    const rotation = angle; // Dönüş derecesi
+
+    const newX1 = panResponderStart.x;
+    const newY1 = panResponderStart.y;
+    const newX2 = moveX;
+    const newY2 = moveY;
 
     addLine(newX1, newY1, newX2, newY2);
-    publishMessage(direction);
+    publishMessage(direction, rotation);
 
-    startingPoint.x = newX2;
-    startingPoint.y = newY2;
+    panResponderStart.x = newX2;
+    panResponderStart.y = newY2;
+    setLastLineEnd({ x: newX2, y: newY2 }); // Son çizginin bitiş noktasını güncelle
   }
-
+  
+  
 
   return (
     <SafeAreaView style={[styles.container, { backgroundColor: isDarkMode ? 'black' : 'white' }]}>
@@ -165,20 +167,20 @@ function MapScreen({ navigation }) {
       />
       <View style={styles.contentContainer}>
         <Svg height="100%" width="100%" style={{ position: 'absolute' }}>
-          {lines.map((line, index) => (
-            <Line key={index} {...line} />
-          ))}
-          <Circle
-            cx={startingPoint.x}
-            cy={startingPoint.y}
-            r={joystickRadius}
-            fill="rgba(0, 0, 255, 0.5)"
-            {...panResponder.panHandlers}
-          />
-          <Text x="50%" y="5%" textAnchor="middle" fill="white" fontSize="16">
-            Harita Başlığı
-          </Text>
-        </Svg>
+      {lines.map((line, index) => (
+        <Line key={index} {...line} />
+      ))}
+      <Circle
+        cx={startingPoint.x}
+        cy={startingPoint.y}
+        r={joystickRadius}
+        fill="rgba(0, 0, 255, 0.5)"
+        {...panResponder.panHandlers}
+      />
+      <Text x="50%" y="5%" textAnchor="middle" fill="white" fontSize="16">
+        Harita Başlığı
+      </Text>
+    </Svg>
       </View>
     </SafeAreaView>
   );

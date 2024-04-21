@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import init from 'react_native_mqtt';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
-import { Button, SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { Button, SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+
 
 const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214'];
 
@@ -31,7 +32,14 @@ function Section({ children, title }: SectionProps): JSX.Element {
 }
 
 function DeviceAddScreen({ navigation }): JSX.Element {
+  const [isLoading, setIsLoading] = useState(false);
   const isDarkMode = useColorScheme() === 'dark';
+
+  const handlePress = () => {
+    setIsLoading(true); 
+    publishMessage('CONNECT');
+    connectToMqtt();
+  };
 
   const [topicMessage, setTopicMessage] = useState('.');
   const backgroundStyle = {
@@ -75,8 +83,9 @@ function DeviceAddScreen({ navigation }): JSX.Element {
   function onMessageArrived(message) {
     const mqttMessage = message.payloadString;
 
-    if (mqttMessage === 'okay') {
+    if (mqttMessage === 'ok') {
       onConnect();
+      setIsLoading(false); 
     }
   }
 
@@ -117,18 +126,19 @@ function DeviceAddScreen({ navigation }): JSX.Element {
   }
 
   return (
-    <SafeAreaView style={[styles.container, styles.backgroundWhite]}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} backgroundColor={Colors.white} />
+    <SafeAreaView style={styles.container}>
       <View style={styles.contentContainer}>
         <View style={styles.sectionContainer}>
-          <Section title='Add Device'>
-            <View style={styles.buttonContainer}>
-              <Button title='Add Device' onPress={() => publishMessage('CONNECT')} />
-            </View>
-          </Section>
+          <Text style={styles.title}>Add Device</Text>
+          <TouchableOpacity style={styles.addButton} onPress={handlePress}>
+            {isLoading ? (
+              <ActivityIndicator size="small" color="#fff" />
+            ) : (
+              <Text style={styles.buttonText}>Add Device</Text>
+            )}
+          </TouchableOpacity>
         </View>
       </View>
-      <Toast />
     </SafeAreaView>
   );
 }
@@ -140,28 +150,26 @@ const styles = StyleSheet.create({
   contentContainer: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
   },
   sectionContainer: {
-    marginTop: 50,
     paddingHorizontal: 24,
-    backgroundColor: Colors.white,
-  },
-  backgroundWhite: {
-    backgroundColor: Colors.white,
+    marginBottom: 20,
   },
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-  },
-  highlight: {
-    fontWeight: '700',
+    marginBottom: 10,
   },
   buttonContainer: {
     marginTop: 10,
   },
-  topicText: {
-    marginTop: 10,
-    fontSize: 16,
+  addButton: {
+    backgroundColor: '#007bff',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: 'center',
   },
 });
 
