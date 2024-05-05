@@ -6,7 +6,6 @@ import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
 const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214'];
 
-
 const ManualScreen = () => {
 
   function onConnect() {
@@ -56,24 +55,117 @@ const ManualScreen = () => {
     });
   };
 
+  //forward
+
+  let forwardTimeout = null;
+
+  const handleForwardPressIn = () => {
+    forwardTimeout = setTimeout(() => {
+      publishMessage('f');
+    }, 0); // İlk basılı tutulduğu anda mesajı gönder
+  };
+
+  const handleForwardPressOut = () => {
+    clearTimeout(forwardTimeout);
+    publishMessage('s');
+  };
+  // backward
+
+  let backwardTimeout = null;
+
+  const handleBackwardPressIn = () => {
+    backwardTimeout = setTimeout(() => {
+      publishMessage('b');
+    }, 0);
+  };
+
+  const handleBackwardPressOut = () => {
+    clearTimeout(backwardTimeout);
+    publishMessage('s');
+  };
+
+// left
+
+  let leftTimeout = null;
+
+  const handleLeftPressIn = () => {
+    leftTimeout = setTimeout(() => {
+      publishMessage('l');
+    }, 0);
+  };
+
+  const handleLeftPressOut = () => {
+    clearTimeout(leftTimeout);
+    publishMessage('s');
+  };
+
+//right 
+
+  let rightTimeout = null;
+
+  const handleRightPressIn = () => {
+    rightTimeout = setTimeout(() => {
+      publishMessage('r');
+    }, 0);
+  };
+
+  const handleRightPressOut = () => {
+    clearTimeout(rightTimeout);
+    publishMessage('s');
+  };
+
+  const handleAutoStart = () => {
+    publishMessage('automatic'); // Automatic kesimi başlat
+  };
+
+
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Manual Control</Text>
       <View style={{ flexDirection: 'column', alignItems: 'center' }}>
         <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-          <Button title="Forward" onPress={() => publishMessage('f')} />
+          <TouchableOpacity
+            onPressIn={handleForwardPressIn}
+            onPressOut={handleForwardPressOut}
+            style={styles.button}>
+            <Text>Forward</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPressIn={handleBackwardPressIn}
+            onPressOut={handleBackwardPressOut}
+            style={styles.button}>
+            <Text>Backward</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPressIn={handleLeftPressIn}
+            onPressOut={handleLeftPressOut}
+            style={styles.button}>
+            <Text>Left</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPressIn={handleRightPressIn}
+            onPressOut={handleRightPressOut}
+            style={styles.button}>
+            <Text>Right</Text>
+          </TouchableOpacity>
+          <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20 }}>
+        <Button title="Automatic" onPress={handleAutoStart} />
+      </View>
+
         </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-          <Button title="Left" onPress={() => publishMessage('l')} />
-          <Button title="Stop" onPress={() => publishMessage('s')} />
-          <Button title="Right" onPress={() => publishMessage('r')} />
-        </View>
-        <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
-          <Button title="Backward" onPress={() => publishMessage('b')} />
-        </View>
+        
       </View>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  button: {
+    backgroundColor: 'lightblue',
+    padding: 10,
+    borderRadius: 5,
+    margin: 5,
+  },
+});
 
 export default ManualScreen;
