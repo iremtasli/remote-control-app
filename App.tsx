@@ -2,10 +2,10 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5'
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import InfoScreen from './src/InfoScreen';
-import SettingsScreen from './src/Settings';
+import Settings from './src/Settings';
 import DeviceAddScreen from './src/DeviceAddScreen';
 import AddTaskAreaScreen from './src/AddTaskAreaScreen';
 import AutomaticScreen from './src/AutomaticScreen';
@@ -20,7 +20,7 @@ function AddTaskAreaStack() {
       <Stack.Screen
         name="AddTaskAreaScreen"
         component={AddTaskAreaScreen}
-        options={{ headerShown: false }} // Header'ı gizle
+        options={{ headerShown: false }}
       />
       <Stack.Screen name="AutomaticScreen" component={AutomaticScreen} />
       <Stack.Screen name="ManualScreen" component={ManualScreen} />
@@ -36,19 +36,19 @@ function MainTabs() {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
           if (route.name === 'Settings') {
-            iconName = focused ? 'cogs' : 'cogs';
-          } else if (route.name === 'Info') {
+            iconName = focused ? 'settings' : 'settings-outline';
+          } else if (route.name === 'Information') {
             iconName = focused ? 'information-circle' : 'information-circle-outline';
-          } else if (route.name === 'AddTaskArea') {
+          } else if (route.name === 'Control') {
             iconName = focused ? 'add-circle' : 'add-circle-outline';
           }
-          return <FontAwesome5Icon name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: 'tomato',
+        tabBarActiveTintColor: 'olive',
         tabBarInactiveTintColor: 'gray',
       })}
     >
-      <Tab.Screen name="Tutorial" component={SettingsScreen} />
+      <Tab.Screen name="Tutorial" component={Settings} />
       <Tab.Screen name="Control" component={AddTaskAreaStack} options={{ headerShown: false }} />
       <Tab.Screen name="Information" component={InfoScreen} />
     </Tab.Navigator>

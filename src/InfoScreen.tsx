@@ -34,16 +34,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#f0f0f0', // Arka plan rengi
   },
   infoText: {
     fontSize: 18,
     marginVertical: 10,
   },
   sizeText: {
-    color: 'black',
+    color: 'black', // Kesim boyutu metin rengi
   },
   vacuumText: {
-    color: 'black',
+    color: 'black', // Vakum durumu metin rengi
   },
 });
 

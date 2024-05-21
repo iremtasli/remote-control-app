@@ -24,7 +24,11 @@ const Settings: React.FC = () => {
       {showTutorial ? (
         <TutorialComponent step={currentStep} onNextStep={handleNextStep} />
       ) : (
-        <Button title="Show Tutorial" onPress={handleShowTutorial} />
+        <Button
+          title="Show Tutorial"
+          onPress={handleShowTutorial}
+          color="olive" 
+        />
       )}
     </View>
   );

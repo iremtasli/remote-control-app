@@ -145,7 +145,7 @@ const AutomaticScreen = () => {
         </TouchableOpacity>
         <TouchableOpacity
             onPress={handleSaveSettings}
-            style={[styles.button, { backgroundColor: 'lightgreen' }]}>
+            style={[styles.button, { backgroundColor: 'sienna' }]}>
             <Text style={styles.buttonText}>Save Settings</Text>
           </TouchableOpacity>
           </View>
@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 20,
     color:'black',
   },
   buttonContainer: {
@@ -174,10 +174,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: 'lightblue',
+    backgroundColor: 'olive',
     paddingVertical: 10,
     paddingHorizontal: 30,
-    margin: 5,
+    margin: 15,
     borderRadius: 5,
   },
   selectedButton: {

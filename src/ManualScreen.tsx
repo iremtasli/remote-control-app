@@ -138,7 +138,7 @@ const ManualScreen = () => {
           <TouchableOpacity
             onPressIn={handleForwardPressIn}
             onPressOut={handleForwardPressOut}
-            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            style={[styles.button, { backgroundColor: 'olive' }]}>
             <Text style={styles.buttonText}>Forward</Text>
           </TouchableOpacity>
         </View>
@@ -146,33 +146,33 @@ const ManualScreen = () => {
           <TouchableOpacity
             onPressIn={handleLeftPressIn}
             onPressOut={handleLeftPressOut}
-            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            style={[styles.button, { backgroundColor: 'olive' }]}>
             <Text style={styles.buttonText}>Left</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPressIn={handleRightPressIn}
             onPressOut={handleRightPressOut}
-            style={[styles.button, { backgroundColor: 'lightblue' }]}>
-            <Text style={styles.buttonText}>Right</Text>
+            style={[styles.button, { backgroundColor: 'olive' }]}>
+            <Text style={styles.buttonText}>Right</Text> 
           </TouchableOpacity>
         </View>
         <View style={styles.row}>
           <TouchableOpacity
             onPressIn={handleBackwardPressIn}
             onPressOut={handleBackwardPressOut}
-            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            style={[styles.button, { backgroundColor: 'olive' }]}>
             <Text style={styles.buttonText}>Backward</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.row}>
           <TouchableOpacity
             onPress={handleAutoStart}
-            style={[styles.button, { backgroundColor: 'lightcoral' }]}>
-            <Text style={styles.buttonText}>Automatic</Text>
+            style={[styles.button, { backgroundColor: 'sienna' }]}>
+            <Text style={styles.buttonText}>Start Moving</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={handleReset}
-            style={[styles.button, { backgroundColor: 'lightcoral' }]}>
+            style={[styles.button, { backgroundColor: 'indianred' }]}>
             <Text style={styles.buttonText}>Reset</Text>
           </TouchableOpacity>
         </View>
@@ -204,12 +204,12 @@ const styles = StyleSheet.create({
   },
   button: {
     paddingVertical: 10,
-    paddingHorizontal: 30,
+    paddingHorizontal: 50,
     borderRadius: 5,
     marginHorizontal: 5,
   },
   buttonText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 'bold',
     color: 'black',
   },

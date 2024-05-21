@@ -4,6 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
 import { Button, SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import FastImage from 'react-native-fast-image';
 
 const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214', 'testtopic/11215'];
 
@@ -92,7 +93,6 @@ function DeviceAddScreen({ navigation }): JSX.Element {
       });
     }
   }
-  
 
   async function connectToMqtt() {
     client.connect({
@@ -133,6 +133,12 @@ function DeviceAddScreen({ navigation }): JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.contentContainer}>
+        {/* GIF görüntüleme */}
+        <FastImage
+          style={styles.gif}
+          source={require('../assets/connect_gif.gif')}
+          resizeMode={FastImage.resizeMode.contain}
+        />
         <View style={styles.sectionContainer}>
           <Text style={styles.title}>CONNECT TO YOUR DEVICE</Text>
           <Section>
@@ -155,7 +161,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  title:{
+  title: {
     fontSize: 16,
     fontWeight: 'bold',
     color: 'black',
@@ -166,7 +172,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   addButton: {
-    backgroundColor: 'lightblue',
+    backgroundColor: 'olive',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
@@ -176,6 +182,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: 'black',
+  },
+  gif: {
+    width: 383,
+    height: 383,
+    marginBottom: 20,
   },
 });
 

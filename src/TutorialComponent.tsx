@@ -29,7 +29,9 @@ const TutorialComponent: React.FC<TutorialComponentProps> = ({ step, onNextStep 
   return (
     <View style={styles.container}>
       {renderStepContent()}
-      {step < 7 && <Button title="Next" onPress={onNextStep} />}
+      {step < 7 && <Button title="Next" 
+      onPress={onNextStep}
+      color="olive"  />}
     </View>
   );
 };
