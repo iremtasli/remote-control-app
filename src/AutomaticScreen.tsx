@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import init from 'react_native_mqtt';
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
-const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214'];
+const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214','testtopic/11215'];
 
 const AutomaticScreen = () => {
   const [selectedSize, setSelectedSize] = useState(' ');
@@ -121,7 +121,7 @@ const AutomaticScreen = () => {
           <Text style={styles.buttonText}>30 cm</Text>
         </TouchableOpacity>
       </View>
-
+  
       <Text style={styles.label}>Select Vacuum Situation:</Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
@@ -133,7 +133,7 @@ const AutomaticScreen = () => {
         >
           <Text style={styles.buttonText}>Enable</Text>
         </TouchableOpacity>
-
+  
         <TouchableOpacity
           style={[styles.button, selectedVacuum === 'Disable' && styles.selectedButton]}
           onPress={() => {
@@ -143,11 +143,15 @@ const AutomaticScreen = () => {
         >
           <Text style={styles.buttonText}>Disable</Text>
         </TouchableOpacity>
-      </View>
-      <Button title="Save Settings" onPress={handleSaveSettings} />
+        <TouchableOpacity
+            onPress={handleSaveSettings}
+            style={[styles.button, { backgroundColor: 'lightgreen' }]}>
+            <Text style={styles.buttonText}>Save Settings</Text>
+          </TouchableOpacity>
+          </View>
     </ScrollView>
   );
-};
+};  
 
 const styles = StyleSheet.create({
   container: {
@@ -155,21 +159,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 20,
+    backgroundColor: 'white',
   },
   label: {
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 10,
+    color:'black',
   },
   buttonContainer: {
     flexDirection: 'row',
+    justifyContent: 'space-around',
     flexWrap: 'wrap',
-    justifyContent: 'center',
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#DDDDDD',
-    padding: 10,
+    backgroundColor: 'lightblue',
+    paddingVertical: 10,
+    paddingHorizontal: 30,
     margin: 5,
     borderRadius: 5,
   },
@@ -179,6 +186,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 16,
     fontWeight: 'bold',
+    color: 'black',
   },
 });
 

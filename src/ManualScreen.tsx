@@ -4,9 +4,19 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import init from 'react_native_mqtt';
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
-const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214'];
+const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214','testtopic/11215'];
 
 const ManualScreen = () => {
+
+  const [robotPosition, setRobotPosition] = useState({ x: 0, y: 0 });
+  const [movementPath, setMovementPath] = useState([]);
+
+
+
+  const handleReset = () => {
+    publishMessage('Reset')
+
+  };
 
   function onConnect() {
     Toast.show({
@@ -69,6 +79,7 @@ const ManualScreen = () => {
     clearTimeout(forwardTimeout);
     publishMessage('s');
   };
+  
   // backward
 
   let backwardTimeout = null;
@@ -120,51 +131,87 @@ const ManualScreen = () => {
 
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Manual Control</Text>
-      <View style={{ flexDirection: 'column', alignItems: 'center' }}>
-        <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+    <View style={styles.container}>
+      <Text style={styles.title}>Control Robot </Text>
+      <View style={styles.buttonContainer}>
+        <View style={styles.row}>
           <TouchableOpacity
             onPressIn={handleForwardPressIn}
             onPressOut={handleForwardPressOut}
-            style={styles.button}>
-            <Text>Forward</Text>
+            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            <Text style={styles.buttonText}>Forward</Text>
           </TouchableOpacity>
-          <TouchableOpacity
-            onPressIn={handleBackwardPressIn}
-            onPressOut={handleBackwardPressOut}
-            style={styles.button}>
-            <Text>Backward</Text>
-          </TouchableOpacity>
+        </View>
+        <View style={styles.row}>
           <TouchableOpacity
             onPressIn={handleLeftPressIn}
             onPressOut={handleLeftPressOut}
-            style={styles.button}>
-            <Text>Left</Text>
+            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            <Text style={styles.buttonText}>Left</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPressIn={handleRightPressIn}
             onPressOut={handleRightPressOut}
-            style={styles.button}>
-            <Text>Right</Text>
+            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            <Text style={styles.buttonText}>Right</Text>
           </TouchableOpacity>
-          <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20 }}>
-        <Button title="Automatic" onPress={handleAutoStart} />
-      </View>
-
         </View>
-        
+        <View style={styles.row}>
+          <TouchableOpacity
+            onPressIn={handleBackwardPressIn}
+            onPressOut={handleBackwardPressOut}
+            style={[styles.button, { backgroundColor: 'lightblue' }]}>
+            <Text style={styles.buttonText}>Backward</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.row}>
+          <TouchableOpacity
+            onPress={handleAutoStart}
+            style={[styles.button, { backgroundColor: 'lightcoral' }]}>
+            <Text style={styles.buttonText}>Automatic</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={handleReset}
+            style={[styles.button, { backgroundColor: 'lightcoral' }]}>
+            <Text style={styles.buttonText}>Reset</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color:'black',
+  },
+  buttonContainer: {
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginBottom: 20,
+  },
   button: {
-    backgroundColor: 'lightblue',
-    padding: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 30,
     borderRadius: 5,
-    margin: 5,
+    marginHorizontal: 5,
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'black',
   },
 });
 

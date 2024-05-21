@@ -1,53 +1,41 @@
 import React, { useState } from 'react';
-import { View, Text, Button, Switch, Picker } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { View, Button, StyleSheet } from 'react-native';
+import TutorialComponent from './TutorialComponent';
 
-    const Settings = () => {
-    const [cuttingSize, setCuttingSize] = useState(10); // Default cutting size: 10 cm
-    const [vacuum, setVacuum] = useState(false); // Default vacuum: false
-  
-    const saveSettings = async () => {
-      try {
-        // Kaydedilecek veri objesi
-        const settings = {
-          cuttingSize,
-          vacuum,
-        };
-  
-        // AsyncStorage kullanarak veriyi kaydetme
-        await AsyncStorage.setItem('settings', JSON.stringify(settings));
-  
-        alert('Ayarlar kaydedildi!');
-      } catch (error) {
-        console.error('Ayarları kaydetme hatası:', error);
-      }
-    };
-  
-    return (
-      <View>
-        <Text>Choose cutting size:</Text>
-        <Picker
-          selectedValue={cuttingSize}
-          onValueChange={(itemValue) => setCuttingSize(itemValue)}
-        >
-          <Picker.Item label="10 cm" value={10} />
-          <Picker.Item label="20 cm" value={20} />
-          <Picker.Item label="30 cm" value={30} />
-          <Picker.Item label="40 cm" value={40} />
-          <Picker.Item label="50 cm" value={50} />
-        </Picker>
-  
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text>Vacuum: </Text>
-          <Switch
-            value={vacuum}
-            onValueChange={(value) => setVacuum(value)}
-          />
-        </View>
-  
-        <Button title="Save Settings" onPress={saveSettings} />
-      </View>
-    );
+const Settings: React.FC = () => {
+  const [showTutorial, setShowTutorial] = useState(false);
+  const [currentStep, setCurrentStep] = useState(1);
+
+  const handleNextStep = () => {
+    if (currentStep < 6) {
+      setCurrentStep(prevStep => prevStep + 1);
+    } else {
+      setShowTutorial(false);
+    }
   };
-  
-  export default Settings
+
+  const handleShowTutorial = () => {
+    setShowTutorial(true);
+    setCurrentStep(1); // Tutorial başladığında adımı sıfırla
+  };
+
+  return (
+    <View style={styles.container}>
+      {showTutorial ? (
+        <TutorialComponent step={currentStep} onNextStep={handleNextStep} />
+      ) : (
+        <Button title="Show Tutorial" onPress={handleShowTutorial} />
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default Settings;

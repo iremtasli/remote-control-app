@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Aps>
+	<Group>
+		<Page Width="500" Height="500" PaperTray="0">
+			<Canvas>
+				<Canvas>
+					<Clip>
+						<Path FillMode="Winding">
+							<PathFigure IsClosed="True">
+								<PolyLine LineColor="#FF000000">
+									<Point X="0" Y="500" />
+									<Point X="0" Y="0" />
+								</PolyLine>
+								<PolyLine LineColor="#FF000000">
+									<Point X="0" Y="0" />
+									<Point X="500" Y="0" />
+								</PolyLine>
+								<PolyLine LineColor="#FF000000">
+									<Point X="500" Y="0" />
+									<Point X="500" Y="500" />
+								</PolyLine>
+								<PolyLine LineColor="#FF000000">
+									<Point X="500" Y="500" />
+									<Point X="0" Y="500" />
+								</PolyLine>
+							</PathFigure>
+						</Path>
+					</Clip>
+					<Path FillMode="Alternate" RenderTransform="1 0 0 -1 0 500">
+						<Pen Alignment="Center" DashCap="Flat" DashOffset="0" DashStyle="Solid" EndCap="Square" LineJoin="Round" MiterLimit="10" StartCap="Square" Width="31.25">
+							<Brush>
+								<SolidBrush Color="#FF000000" />
+							</Brush>
+						</Pen>
+						<PathFigure IsClosed="True">
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="268.49615" Y="160.69333" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="268.49615" Y="160.69333" />
+								<Point X="268.49615" Y="160.69333" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="268.49615" Y="160.69333" />
+								<ControlPoint1 X="310.37595" Y="157.39798" />
+								<ControlPoint2 X="341.6548" Y="120.776245" />
+								<EndPoint X="338.35944" Y="78.896484" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="338.35944" Y="78.896484" />
+								<Point X="338.35944" Y="78.896484" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="338.35944" Y="78.896484" />
+								<ControlPoint1 X="335.06406" Y="37.016663" />
+								<ControlPoint2 X="298.44235" Y="5.737793" />
+								<EndPoint X="256.56256" Y="9.033142" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="256.56256" Y="9.033142" />
+								<Point X="256.56256" Y="9.033142" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="256.56256" Y="9.033142" />
+								<Point X="272.18756" Y="-6.591858" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.18756" Y="-6.591858" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="268.49615" Y="160.69333" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="268.49615" Y="160.69333" />
+								<Point X="272.18756" Y="-6.591858" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.18756" Y="-6.591858" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="268.49615" Y="160.69333" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="268.49615" Y="160.69333" />
+								<Point X="272.18756" Y="-6.591858" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.18756" Y="-6.591858" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="186.58209" Y="48.027313" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.58209" Y="48.027313" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="268.49615" Y="160.69333" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="268.49615" Y="160.69333" />
+								<Point X="272.18756" Y="-6.591858" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.18756" Y="-6.591858" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="186.58209" Y="48.027313" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.58209" Y="48.027313" />
+								<Point X="186.58209" Y="48.027313" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.58209" Y="48.027313" />
+								<Point X="223.89655" Y="77.32419" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="77.32419" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="406.6309" Y="250" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="406.6309" Y="250" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="450.78128" Y="215.3711" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="450.78128" Y="215.3711" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="409.01367" Y="143.10547" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="409.01367" Y="143.10547" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="365.16605" Y="160.76172" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="365.16605" Y="160.76172" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="358.59378" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="358.59378" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="275.05862" Y="113.99411" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="275.05862" Y="113.99411" />
+								<Point X="268.49615" Y="160.69333" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="268.49615" Y="160.69333" />
+								<Point X="272.18756" Y="-6.591858" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.18756" Y="-6.591858" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="228.34967" Y="-24.238342" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.34967" Y="-24.238342" />
+								<Point X="186.58209" Y="48.027313" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.58209" Y="48.027313" />
+								<Point X="186.58209" Y="48.027313" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.58209" Y="48.027313" />
+								<Point X="223.89655" Y="77.32419" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="77.32419" />
+								<Point X="223.89655" Y="77.32419" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="223.89655" Y="77.32419" />
+								<ControlPoint1 X="223.54498" Y="81.396454" />
+								<ControlPoint2 X="223.33015" Y="85.458954" />
+								<EndPoint X="223.33015" Y="89.53122" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.33015" Y="89.53122" />
+								<Point X="223.33015" Y="89.53122" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="223.33015" Y="89.53122" />
+								<ControlPoint1 X="223.33015" Y="93.603485" />
+								<ControlPoint2 X="223.53523" Y="97.60739" />
+								<EndPoint X="223.89655" Y="101.59177" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="368.8868" Y="185.56638" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="368.8868" Y="185.56638" />
+								<Point X="368.8868" Y="185.56638" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="368.8868" Y="185.56638" />
+								<ControlPoint1 X="395.97827" Y="212.65784" />
+								<ControlPoint2 X="435.46497" Y="223.23825" />
+								<EndPoint X="472.4726" Y="213.32208" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="472.4726" Y="213.32208" />
+								<Point X="472.4726" Y="213.32208" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="472.4726" Y="213.32208" />
+								<ControlPoint1 X="509.48026" Y="203.40591" />
+								<ControlPoint2 X="538.38654" Y="174.49966" />
+								<EndPoint X="548.30273" Y="137.492" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="548.30273" Y="137.492" />
+								<Point X="548.30273" Y="137.492" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="548.30273" Y="137.492" />
+								<ControlPoint1 X="558.2189" Y="100.484344" />
+								<ControlPoint2 X="547.6384" Y="60.99768" />
+								<EndPoint X="520.547" Y="33.90622" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="33.90622" />
+								<Point X="520.547" Y="33.90622" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="33.90622" />
+								<Point X="520.547" Y="19.15036" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="19.15036" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="368.8868" Y="185.56638" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="368.8868" Y="185.56638" />
+								<Point X="520.547" Y="19.15036" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="19.15036" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="368.8868" Y="185.56638" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="368.8868" Y="185.56638" />
+								<Point X="520.547" Y="19.15036" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="19.15036" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="606.15247" Y="-35.46881" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="606.15247" Y="-35.46881" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="368.8868" Y="185.56638" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="368.8868" Y="185.56638" />
+								<Point X="520.547" Y="19.15036" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="19.15036" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="606.15247" Y="-35.46881" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="606.15247" Y="-35.46881" />
+								<Point X="606.15247" Y="-35.46881" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="606.15247" Y="-35.46881" />
+								<Point X="568.838" Y="-64.765686" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="568.838" Y="-64.765686" />
+								<Point X="223.89655" Y="101.59177" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="223.89655" Y="101.59177" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="186.60162" Y="130.88864" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="186.60162" Y="130.88864" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="228.3692" Y="203.15427" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="228.3692" Y="203.15427" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="272.21686" Y="185.49802" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="272.21686" Y="185.49802" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="278.78912" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="278.78912" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="362.32428" Y="232.2656" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="362.32428" Y="232.2656" />
+								<Point X="368.8868" Y="185.56638" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="368.8868" Y="185.56638" />
+								<Point X="520.547" Y="19.15036" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="520.547" Y="19.15036" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="564.3849" Y="36.796844" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="564.3849" Y="36.796844" />
+								<Point X="606.15247" Y="-35.46881" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="606.15247" Y="-35.46881" />
+								<Point X="606.15247" Y="-35.46881" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="606.15247" Y="-35.46881" />
+								<Point X="568.838" Y="-64.765686" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="568.838" Y="-64.765686" />
+								<Point X="568.838" Y="-64.765686" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="568.838" Y="-64.765686" />
+								<ControlPoint1 X="569.1603" Y="-68.808655" />
+								<ControlPoint2 X="569.3751" Y="-72.871155" />
+								<EndPoint X="569.3751" Y="-76.94342" />
+							</Bezier>
+						</PathFigure>
+						<PathFigure IsClosed="True">
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="256.14258" Y="312.19727" />
+								<ControlPoint1 X="256.2127" Y="346.6819" />
+								<ControlPoint2 X="284.2001" Y="374.59354" />
+								<EndPoint X="318.6848" Y="374.57016" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="318.6848" Y="374.57016" />
+								<Point X="318.6848" Y="374.57016" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="318.6848" Y="374.57016" />
+								<ControlPoint1 X="353.16953" Y="374.5468" />
+								<ControlPoint2 X="381.11905" Y="346.5973" />
+								<EndPoint X="381.14246" Y="312.11255" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="381.14246" Y="312.11255" />
+								<Point X="381.14246" Y="312.11255" />
+							</PolyLine>
+							<Bezier CurveColor="#FF000000">
+								<StartPoint X="381.14246" Y="312.11255" />
+								<ControlPoint1 X="381.16583" Y="277.62784" />
+								<ControlPoint2 X="353.2542" Y="249.64044" />
+								<EndPoint X="318.76953" Y="249.57033" />
+							</Bezier>
+							<PolyLine LineColor="#FF000000">
+								<Point X="318.76953" Y="249.57033" />
+								<Point X="256.14258" Y="312.19727" />
+							</PolyLine>
+						</PathFigure>
+					</Path>
+				</Canvas>
+			</Canvas>
+		</Page>
+	</Group>
+</Aps>

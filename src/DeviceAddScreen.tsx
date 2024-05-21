@@ -5,8 +5,7 @@ import { Toast } from 'react-native-toast-message/lib/src/Toast';
 import { Button, SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-
-const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214'];
+const topics: string[] = ['testtopic/11212', 'testtopic/11213', 'testtopic/11214', 'testtopic/11215'];
 
 type SectionProps = React.PropsWithChildren<{
   title: string;
@@ -36,9 +35,8 @@ function DeviceAddScreen({ navigation }): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const handlePress = () => {
-    setIsLoading(true); 
+    setIsLoading(true);
     publishMessage('CONNECT');
-    connectToMqtt();
   };
 
   const [topicMessage, setTopicMessage] = useState('.');
@@ -71,7 +69,7 @@ function DeviceAddScreen({ navigation }): JSX.Element {
       visibilityTime: 2000,
     });
 
-    navigation.navigate('AddTaskAreaScreen');
+    navigation.navigate('Main'); // Main stack'ine yönlendirin
   }
 
   function onConnectionLost(responseObject) {
@@ -85,9 +83,16 @@ function DeviceAddScreen({ navigation }): JSX.Element {
 
     if (mqttMessage === 'ok') {
       onConnect();
-      setIsLoading(false); 
+      setIsLoading(false);
+      Toast.show({
+        type: 'success',
+        text1: 'Bağlantı Başarılı',
+        text2: 'Cihaz Eklendi',
+        visibilityTime: 2000,
+      });
     }
   }
+  
 
   async function connectToMqtt() {
     client.connect({
@@ -129,14 +134,16 @@ function DeviceAddScreen({ navigation }): JSX.Element {
     <SafeAreaView style={styles.container}>
       <View style={styles.contentContainer}>
         <View style={styles.sectionContainer}>
-          <Text style={styles.title}>Add Device</Text>
-          <TouchableOpacity style={styles.addButton} onPress={handlePress}>
-            {isLoading ? (
-              <ActivityIndicator size="small" color="#fff" />
-            ) : (
-              <Text style={styles.buttonText}>Add Device</Text>
-            )}
-          </TouchableOpacity>
+          <Text style={styles.title}>CONNECT TO YOUR DEVICE</Text>
+          <Section>
+            <TouchableOpacity style={styles.addButton} onPress={handlePress}>
+              {isLoading ? (
+                <ActivityIndicator size="large" color="#fff" />
+              ) : (
+                <Text style={styles.buttonText}>Connect to Turfinator</Text>
+              )}
+            </TouchableOpacity>
+          </Section>
         </View>
       </View>
     </SafeAreaView>
@@ -146,30 +153,29 @@ function DeviceAddScreen({ navigation }): JSX.Element {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#fff',
+  },
+  title:{
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'black',
   },
   contentContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  sectionContainer: {
-    paddingHorizontal: 24,
-    marginBottom: 20,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    marginBottom: 10,
-  },
-  buttonContainer: {
-    marginTop: 10,
-  },
   addButton: {
-    backgroundColor: '#007bff',
+    backgroundColor: 'lightblue',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
     alignItems: 'center',
+  },
+  buttonText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'black',
   },
 });
 
