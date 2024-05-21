@@ -20,8 +20,9 @@ const TutorialComponent: React.FC<TutorialComponentProps> = ({ step, onNextStep 
       case 5:
         return <Text style={styles.text}>5- On the screen that appears, select the grass height and vacuuming status you want to cut and save your selections.</Text>;  
       case 6:
-        return <Text style={styles.text}>6- Go back and click on the 'Start Motion' button to start controlling your robot from this screen.</Text>;
-          default:
+        return <Text style={styles.text}>6- Go back and click on the 'Start Motion' button to start controlling your robot from this screen.
+        After finish the surroundings of your garden click start motion. If tehre is something wrong, please click 'Reset' and start again.</Text>;
+      default:
         return <Text style={styles.text}>Tutorial tamamlandı!</Text>;
     }
   };
@@ -29,9 +30,13 @@ const TutorialComponent: React.FC<TutorialComponentProps> = ({ step, onNextStep 
   return (
     <View style={styles.container}>
       {renderStepContent()}
-      {step < 7 && <Button title="Next" 
-      onPress={onNextStep}
-      color="olive"  />}
+      {step < 7 && (
+        <Button
+          title="Next" 
+          onPress={onNextStep}
+          color="olive"
+        />
+      )}
     </View>
   );
 };
@@ -42,11 +47,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
+    
   },
   text: {
     fontSize: 18,
     marginBottom: 20,
-    color:'black'
+    color: 'black',
   },
 });
 

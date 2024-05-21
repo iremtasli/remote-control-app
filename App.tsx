@@ -36,7 +36,7 @@ function MainTabs() {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
           if (route.name === 'Settings') {
-            iconName = focused ? 'settings' : 'settings-outline';
+            iconName = focused ? 'settings' : 'information-circle-outline';
           } else if (route.name === 'Information') {
             iconName = focused ? 'information-circle' : 'information-circle-outline';
           } else if (route.name === 'Control') {
