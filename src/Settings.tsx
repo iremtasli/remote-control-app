@@ -8,7 +8,7 @@ const Settings: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const handleNextStep = () => {
-    if (currentStep < 6) {
+    if (currentStep < 7) {
       setCurrentStep(prevStep => prevStep + 1);
     } else {
       setShowTutorial(false);

@@ -34,17 +34,24 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0', // Arka plan rengi
+    backgroundColor: '#f5f5dc', // Arka plan rengi (bej)
+    padding: 20,
   },
   infoText: {
-    fontSize: 18,
-    marginVertical: 10,
+    fontSize: 20,
+    marginVertical: 15,
+    padding: 10,
+    borderRadius: 10,
+    textAlign: 'center',
+    width: '90%',
   },
   sizeText: {
-    color: 'black', // Kesim boyutu metin rengi
+    backgroundColor: 'olive', // Kesim boyutu arka plan rengi
+    color: 'white', // Kesim boyutu metin rengi
   },
   vacuumText: {
-    color: 'black', // Vakum durumu metin rengi
+    backgroundColor: 'sienna', // Vakum durumu arka plan rengi
+    color: 'white', // Vakum durumu metin rengi
   },
 });
 

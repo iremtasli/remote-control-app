@@ -15,7 +15,6 @@ const ManualScreen = () => {
 
   const handleReset = () => {
     publishMessage('Reset')
-
   };
 
   function onConnect() {
@@ -168,7 +167,7 @@ const ManualScreen = () => {
           <TouchableOpacity
             onPress={handleAutoStart}
             style={[styles.button, { backgroundColor: 'sienna' }]}>
-            <Text style={styles.buttonText}>Start Moving</Text>
+            <Text style={styles.buttonText}>Start Mowing</Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={handleReset}
